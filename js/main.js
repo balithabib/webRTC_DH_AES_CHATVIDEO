@@ -3,9 +3,9 @@
 
 
 window.sodium = {
-    onload: async function (sodium){
+    onload: function (sodium){
       
-      let key_pair = await sodium.crypto_kx_keypair('hex');
+      let key_pair = sodium.crypto_kx_keypair('hex');
       let remote_tx;
       let local_rx;
       $(function () {
@@ -155,7 +155,7 @@ function encrypt(message, key){
           }
       
           localPeer.ondatachannel = function (event){
-            event.channel.onmessage = async function (event){
+            event.channel.onmessage = function (event){
               var message_received = JSON.parse(event.data);
               if (message_received['type'] === "key_exchange"){
                   let remote_spk = message_received['message'];
