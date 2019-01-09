@@ -27,7 +27,6 @@ let server_keys = {};
 function print(args){
    console.log(args);
 }
-sodium.crypto_kx_server_session_keys()
 
 const mimeType = {
    '.html': 'text/html',
@@ -71,7 +70,7 @@ var server = http.createServer(function (req, res) {
      });
    });
 
- }).listen(8080);
+ }).listen(8081);
  
 
 var websocket = new ws({httpServer: server});
