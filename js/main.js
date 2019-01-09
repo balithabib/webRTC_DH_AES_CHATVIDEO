@@ -50,7 +50,7 @@ window.sodium = {
       var configuration = { "iceServers": 
                     [{ "urls": "stun:stun2.1.google.com:19302" },
                     //{"urls": 'turn:numb.viagenie.ca',"credential": 'muazkh',"username": 'webrtc@live.com'}
-                    {"urls":"turn:74.125.140.127:19305?transport=udp"}
+                    {"urls":["turn:74.125.140.127:19305?transport=udp"],"username":"CIiB3eEFEgZnT0T+bqgYzc/s6OMTIICjBQ","credential":"GoyaPfvzQzKQrhO4dlwk9LcpJEE=","maxRateKbps":"8000"}
                     ]}; 
       
       //  ici on cache la page de login 
