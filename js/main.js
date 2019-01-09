@@ -48,10 +48,8 @@ window.sodium = {
       var chat_history = {};
       //variable de configuration de l'objet RTCPeerconnection, on utilisent les serveurs stun/turn de Google  
       var configuration = { "iceServers": 
-                    [{ "urls": "stun:stun2.1.google.com:19302" },
-                    //{"urls": 'turn:numb.viagenie.ca',"credential": 'muazkh',"username": 'webrtc@live.com'}
-                    {"urls":["turn:74.125.140.127:19305?transport=udp"],"username":"CIiB3eEFEgZnT0T+bqgYzc/s6OMTIICjBQ","credential":"GoyaPfvzQzKQrhO4dlwk9LcpJEE=","maxRateKbps":"8000"}
-                    ]}; 
+              [{ "urls": "stun:stun2.1.google.com:19302" },
+              {"urls": 'turn:numb.viagenie.ca',"credential": 'muazkh',"username": 'webrtc@live.com'}]}; 
       
       //  ici on cache la page de login 
       divPrimry.style.display = "none";
