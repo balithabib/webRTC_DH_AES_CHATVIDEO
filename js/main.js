@@ -195,6 +195,7 @@ function encrypt(message, key){
       */ 
       socket.onmessage = function (message) { 
          var data = JSON.parse(message['data']); 
+         console.log("Le message : ",data);
          console.log(callToUsername['value']);
          switch(data['type']) { 
             case "login": 
