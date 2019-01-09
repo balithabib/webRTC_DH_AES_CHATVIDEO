@@ -20,9 +20,9 @@ window.sodium = {
       //
       var user;
       // connexion à notre serveur de signalisation
-      //var socket = new WebSocket("ws://52.47.102.211:8080");
+      var socket = new WebSocket("ws://52.47.102.211:8080");
       //var socket = new WebSocket("ws://localhost:8080");
-      var socket = new WebSocket("ws://52.47.102.211:8081");
+      //var socket = new WebSocket("ws://52.47.102.211:8081");
       // variables récuperer à l'aide des query selector 
       var divLogin = document.querySelector('#divlogin'); 
       var userName = document.querySelector('#username'); 
